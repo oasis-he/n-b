@@ -7,7 +7,7 @@ module.exports = {
   },
   //通过用户名获取用户信息
   getUserByName: function getUserByName(name) {
-    console.log(name)
+
     return User.findOne({
         name: name
       }).addCreatedAt().exec();
